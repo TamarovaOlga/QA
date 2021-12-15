@@ -1,0 +1,230 @@
+ДЗ 02.12.2021 Группа QA 25
+
+JSON
+ 1. Создать внешний репозиторий c названием JSON:Зайти в repositories, нажать new, параметры pablic, Add a README file.
+ 2. Клонировать репозиторий JSON на локальный компьютер: 
+    Зайти в repositories JSON, нажать code-https-copy-в терминале написать команду git clone https://github.com/TamarovaOlga/JSON.git
+ 3. Внутри локального JSON создать файл “new.json”: touch new.json
+ 4. Добавить файл под гит: git add new.json 
+ 5. Закоммитить файл: git commit -m "add new.json"
+ 6. Отправить файл на внешний GitHub репозиторий: git push
+ 7. Отредактировать содержание файла “new.json” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате JSON.
+    {"name": "Olga",
+    "age": 25,
+    "number of pets": 0,
+    "desired salary": "500$",
+    "country": "Russia"}
+ 8. Отправить изменения на внешний репозиторий: git commit -m "add information about yourself" 
+     git push
+ 9. Создать файл preferences.json : touch preferences.json
+ 10.В файл preferences.json добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате JSON.
+    {"My favorite film" : "Allied",
+     "My favorite serial" : "Sherlock",
+     "My favorite food" : "pizza and orange juice",
+     "My favorite time of year" :"summer",
+     "The country I want to visit" : "Australia"}
+ 11.Создать файл sklls.json добавить информацию о скиллах которые будут изучены на курсе в формате JSON
+    {
+    "Skills1": "Understanding software testing and development processes",
+    "Skills2": "Understanding the basics of testing",
+    "Skills3": "Skills of client-server architecture",
+    ...}
+ 12. Отправить сразу 2 файла на внешний репозиторий :
+     git add .
+     git commit -m "add information about my preferences and skills"
+     git push
+ 13. На веб интерфейсе создать файл bug_report.json : add file - create new file-commt new file
+ 14. Сделать Commit changes (сохранить) изменения на веб интерфейсе: Commit changes
+ 15. На веб интерфейсе модифицировать файл bug_report.json, добавить баг репорт в формате JSON.
+{
+    "summary": "the registration page does not have a password display button",
+    "project": "X",
+    "ID": "123",
+    "component": "user registration form",
+    "version": "1",
+    "severity": "minor",
+    "status": "new",
+    "author": "Tamarova Olga",
+    "assigned to": "Vadim Ksendzov",
+    "environment": "Windows 10 Google chrom version 96.0.4664.45",
+    "step1": "open registration form",
+    "step2": "enter password",
+    "actual result": "does not show password",
+    "expected result": "show password" 
+}
+ 16. Сделать Commit changes (сохранить) изменения на веб интерфейсе. Commit changes
+ 17. Синхронизировать внешний и локальный репозиторий JSON 
+     git fetch
+     $ git fetch
+     remote: Enumerating objects: 5, done.
+     remote: Counting objects: 100% (5/5), done.
+     remote: Compressing objects: 100% (3/3), done.
+     remote: Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+     Unpacking objects: 100% (3/3), 899 bytes | 40.00 KiB/s, done.
+     From https://github.com/TamarovaOlga/JSON
+     541d1d4..e64f691  main       -> origin/main
+
+     git pull
+     $ git pull
+     Updating 40364ba..e64f691
+     Fast-forward
+     bug_report.json | 16 ++++++++++++++++
+     1 file changed, 16 insertions(+)
+     create mode 100644 bug_report.json
+
+XML
+ 1. Создать внешний репозиторий c названием XML: Зайти в repositories, нажать new, параметры pablic, Add a README file.
+ 2. Клонировать репозиторий XML на локальный компьютер.
+     Зайти в repositories JSON, нажать code-https-copy-в терминале написать команду git clone https://github.com/TamarovaOlga/XML.git
+ 3. Внутри локального XML создать файл “new.xml”: touch new.xml
+ 4. Добавить файл под гит: git add new.xml
+ 5. Закоммитить файл: git commit -m "add new.xml"
+ 6. Отправить файл на внешний GitHub репозиторий: git push
+ 7. Отредактировать содержание файла “new.xml” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате XML.
+     <?xml version="1.0" encoding="UTF-8"?>
+     <information>
+       <name>Olga</name>
+       <age>25</age>
+       <pets>no</pets>
+       <salary>500$</salary>
+       <country>Russia</country>
+     </information>
+ 8. Отправить изменения на внешний репозиторий:
+     git add .
+     git commit -m "add information about yourself"
+ 9. Создать файл preferences.xml : touch preferences.xml
+ 10. В файл preferences.xml добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате XML.
+     <?xml version="1.0" encoding="UTF-8"?>
+     <preferences>
+    	<film>Allied</film>
+    	<serial>Sherlock</serial>
+    	<food>pizza and orange juice</food>
+    	<season>summer</season>
+    	<country>Australia</country>
+     </preferences>
+ 11. Создать файл sklls.xml добавить информацию о скиллах которые будут изучены на курсе в формате XML
+     <?xml version="1.0" encoding="UTF-8"?>
+     <abilities>
+    	<skills>Understanding software testing and development processes</skills>
+    	<skills>Understanding the basics of testing</skills>
+    	<skills>Skills of client-server architecture</skills>
+    	<skills>Skills of HTTP methods of requests to the server and the structure of HTTP requests and responses</skills>
+    	<skills>Skills of JSON, XML and their structure</skills>
+    	<skills>API testing skills via Postman</skills>
+      </abilities>
+ 12. Сделать коммит в одну строку:
+     git add .
+     git commit -m "add information about my preferences and skills"
+ 13. Отправить сразу 2 файла на внешний репозиторий:git push
+ 14. На веб интерфейсе создать файл bug_report.xml : add file - create new file-commt new file
+ 15. Сделать Commit changes (сохранить) изменения на веб интерфейсе: Commit changes
+ 16. На веб интерфейсе модифицировать файл bug_report.xml, добавить баг репорт в формате XML:
+     <?xml version="1.0" encoding="UTF-8"?>
+  <BugReport>
+   <Summary>the registration page does not have a password display button </Summary>
+    <Project>X</Project>
+    <ID>123</ID>
+    <Component>user registration form</Component>
+    <Version>1</Version>
+    <Severity>minor</Severity>
+    <Status>new</Status>
+    <Author>Tamarova Olga</Author>
+    <AssignedTo>Vadim Ksendzov</AssignedTo>
+    <Environment>Windows 10 Google chrom version 96.0.4664.45</Environment>
+    <Step1>open registration form</Step1>
+    <Step2>enter password</Step2>
+    <ActualResult>does not show password</ActualResult>
+    <ExpectedResult>show password</ExpectedResult>
+   </BugReport>
+ 17. Сделать Commit changes (сохранить) изменения на веб интерфейсе: Commit changes Fill bug report the registration page
+ 18. Синхронизировать внешний и локальный репозиторий XML:
+     git fetch
+     $ git fetch
+	remote: Enumerating objects: 7, done.
+	remote: Counting objects: 100% (7/7), done.
+	remote: Compressing objects: 100% (5/5), done.
+	remote: Total 6 (delta 2), reused 0 (delta 0), pack-reused 0
+	Unpacking objects: 100% (6/6), 1.56 KiB | 66.00 KiB/s, done.
+	From https://github.com/TamarovaOlga/XML
+   	798ce04..ed143d1  main       -> origin/main
+
+        git pull
+        $ git pull
+	Updating 798ce04..ed143d1
+	Fast-forward
+ 	bug_report.xml | 17 +++++++++++++++++
+ 	1 file changed, 17 insertions(+)
+ 	create mode 100644 bug_report.xml
+
+TXT
+ 1. Создать внешний репозиторий c названием TXT: Зайти в repositories, нажать new, параметры pablic, Add a README file.
+ 2. Клонировать репозиторий TXT на локальный компьютер: git clone https://github.com/TamarovaOlga/TXT.git
+ 3. Внутри локального TXT создать файл “new.txt” : touch new.txt
+ 4. Добавить файл под гит: git add .
+ 5. Закоммитить файл: git commit -m "add new.txt"
+ 6. Отправить файл на внешний GitHub репозиторий: git push
+ 7. Отредактировать содержание файла “new.txt” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате TXT:
+    My name is Olga.
+    I'm 25 years old.
+    I do not have any pets.
+    I want my probation salary to be 500 $.
+    I'm from Russia.
+ 8. Отправить изменения на внешний репозиторий: 
+    git commit -am "add information about yourself" 
+    git push
+ 9. Создать файл preferences.txt : touch preferences.txt
+ 10. В файл preferences.txt” добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате TXT:
+     My favorite movie is Allies.
+     My favorite TV series is Sherlock Holmes.
+     My favorite food is pizza and orange juice.
+     My favorite season is summer.
+     I want to visit Australia.
+ 11. Создать файл sklls.txt добавить информацию о скиллах которые будут изучены на курсе в формате TXT:
+     Understanding software testing and development processes
+     Understanding the basics of testing
+     Skills of client-server architecture
+     Skills of HTTP methods of requests to the server and the structure of HTTP requests and responses
+     Skills of JSON, XML and their structure
+     API testing skills via Postman
+     Removing and reading logs from an external server
+ 12. Сделать коммит в одну строку:
+     git add .
+     git commit -m "add information about my preferences and skills"
+ 13. Отправить сразу 2 файла на внешний репозиторий : git push
+ 14. На веб интерфейсе создать файл bug_report.txt : add file - create new file-commt new file
+ 15. Сделать Commit changes (сохранить) изменения на веб интерфейсе: Commit changes
+ 16. На веб интерфейсе модифицировать файл bug_report.txt, добавить баг репорт в формате TXT :
+     Summary:
+   	the registration page does not have a password display button 
+     Project:
+    	X
+     ID:
+    	123
+     Component:
+    	user registration form
+     Version:
+    	1.0
+     Severity:
+    	minor
+     Status:
+    	new
+     ...
+ 17. Сделать Commit changes (сохранить) изменения на веб интерфейсе. Commit changes
+ 18. Синхронизировать внешний и локальный репозиторий TXT :
+     git fetch
+     $ git fetch
+	remote: Enumerating objects: 8, done.
+	remote: Counting objects: 100% (8/8), done.
+	remote: Compressing objects: 100% (6/6), done.
+	remote: Total 6 (delta 3), reused 0 (delta 0), pack-reused 0
+	Unpacking objects: 100% (6/6), 1.51 KiB | 67.00 KiB/s, done.
+	From https://github.com/TamarovaOlga/TXT
+  	8d04d81..4daf7ce  main       -> origin/main
+    
+     git pull
+     $ git pull
+        Updating 950f830..4daf7ce
+        Fast-forward
+        bug_report.txt | 29 +++++++++++++++++++++++++++++
+        1 file changed, 29 insertions(+)
+        create mode 100644 bug_report.txt
