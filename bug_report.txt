@@ -1,0 +1,30 @@
+Summary:
+   "remove product from shopping cart" button doesn't work
+Project:
+    X
+ID:
+    123
+Component:
+    shopping cart
+Version:
+    1.0
+Severity:
+    blocker
+Status:
+    new
+Author:
+    Tamarova Olga
+Assigned to:
+    Vadim Ksendzov
+Environment:
+    Windows 10, Google chrom, version 96.0.4664.45
+Step1:
+    open a website ...
+Step2:
+    add item to shopping cart
+Step3:
+   click the button to remove an item from the cart shopping cart
+Actual result:
+    the item has not been removed from the shopping cart
+Expected result:
+    Removing products from the shopping cart
